@@ -1,0 +1,67 @@
+.collapsible h3 {
+  margin: 0;
+  margin-right: 25px;
+}
+
+#faqs-wrapper p {
+  margin-top: 21px;
+  margin-bottom: 21px;
+}
+
+.collapsible i {
+  position: absolute;
+  right: 28px;
+  top: 28px;
+  color: #1c1c1c;
+}
+.collapsible i:hover { pointer-events: none }
+
+#faq-top-section {
+  padding: 0px clamp(100px, 8vw, 150px);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.collapsible {
+  position: relative;
+  background-color: white;
+  color: #1c1c1c;
+  cursor: pointer;
+  width: 100%;
+  padding: 28px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  text-align: left;
+  transition: 0.1s;
+}
+.collapsible:hover {
+  background-color: #f5f4f5;
+  color: #d0a842;
+  border: 2px solid #d0a842;
+}
+.collapsible:hover i { color: #d0a842 }
+
+.active {
+  background-color: #f5f4f5;
+  color: #1c1c1c;
+  border: 2px solid #1c1c1c;
+}
+
+.content {
+  padding: 0 31px;
+  background-color: white;
+  max-height: 0;
+  margin-bottom: 3px;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 482px) {
+  .collapsible { padding: 21px }
+  .collapsible h3 { margin-right: 21px }
+  .collapsible i { right: 14px }
+  .content { padding: 0 21px }
+}

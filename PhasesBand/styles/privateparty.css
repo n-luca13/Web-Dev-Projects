@@ -1,0 +1,31 @@
+/* FULL SCREEN SECTION */
+#main-titles-wrapper {
+    background-image: url('../media/photos/PrivateParty_Preview.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#main-titles-section h1 {
+    margin: 0px 0px 7px 0px;
+    color: #F5F4F5;
+}
+
+#main-titles-section h2 {
+    margin: 15px 0px 0px 0px;
+    color: #F5F4F5;
+}
+
+#full-logo-divider {
+    display: none;
+    transform: translate(0.3%, 41%);
+    height: 160px;
+}
+
+/* CALL TO ACTION */
+
+#cta-left-wrapper {padding: 70px clamp(50px, 4vw, 75px)}
+#cta-left-wrapper, #cta-right-wrapper { height: 345px }
+#cta-left-wrapper #cta-btns-container{ justify-content: space-between }
+#cta-right-wrapper { background-color: #F5F4F5 }
+#cta-right-wrapper h2 { color: #1c1c1c }

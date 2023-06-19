@@ -1,0 +1,30 @@
+@media only screen and (max-width: 769px) {
+    #calltoaction-container { border-radius: 0 }
+    #cta-right-wrapper, #cta-left-wrapper { border-radius: 0 !important }
+    #cta-right-wrapper { border: 0 }
+}
+
+@media only screen and (max-width: 1024px) {
+    #calltoaction-container { grid-template-columns: unset }
+    #cta-left-wrapper, #cta-right-wrapper { height: unset }
+    #cta-left-wrapper {
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 0;
+        border-right-width: 2px;
+    }
+    #cta-right-wrapper {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 50px;
+        border-left-width: 2px;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    @media only screen and (min-width: 1024.5px) {
+        #cta-left-wrapper #cta-btns-container {
+            flex-direction: column;
+            gap: 21px;
+            align-items: center;
+        }
+    }
+}

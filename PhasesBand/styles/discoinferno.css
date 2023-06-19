@@ -1,0 +1,74 @@
+/* FULL SCREEN SECTION */
+#full-screen-container {
+    background-image: url('../media/photos/disco_inferno_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 100%;
+    display: grid;
+    grid-template-rows: auto 250px;
+}
+
+#di-logo-wrapper {
+    width: 100%;
+    min-height: 400px;
+    z-index: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+#di-logo-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+#main-titles-wrapper { position: relative }
+#main-titles-section {
+    position: relative;
+    height: 100%;
+}
+
+#main-titles-section h1 {
+    margin: 10px 0px 0px 0px;
+    color: #F5F4F5;
+}
+
+#main-titles-section h2 {
+    margin: 0px 0px 10px 0px;
+    color: #F5F4F5;
+}
+
+
+/* CALL TO ACTION */
+#full-logo-divider {
+    display: none;
+    position: relative;
+    z-index: 1;
+    transform: translate(0.3%, 41%);
+    height: 160px;
+}
+
+#cta-left-wrapper { position: relative } 
+#cta-left-wrapper::before {
+    content: "";
+    background-image: url('../media/photos/disco_ball_bckgrnd.jpg');
+    background-position-x: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.6;
+}
+
+#cta-left-wrapper {padding: 70px clamp(50px, 4vw, 75px)}
+#cta-right-wrapper { background-color: #F5F4F5 }
+#cta-right-wrapper h2 { color: #1c1c1c }

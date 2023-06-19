@@ -1,0 +1,133 @@
+@media only screen and (max-width: 359px) {    
+    #full-logo-divider { transform: translate(0%, 48%) !important }
+}
+@media only screen and (min-width: 360px) and (max-width: 379px) {    
+    #full-logo-divider { transform: translate(0%, 45%) !important }
+}
+@media only screen and (min-width: 380px) and (max-width: 388px) {    
+    #full-logo-divider { transform: translate(0%, 42%) !important }
+}
+
+@media only screen and (max-width: 480px) {
+    #wrapper-gallery { padding-bottom: 140px }
+    
+    #full-logo-divider { transform: translate(0%, 41%) }
+    #full-logo-divider img {
+        padding-right: 21px;
+        padding-left: 0;
+    }
+
+    #carosello { min-width: 340px}
+    .btn-carosello { display: none }
+    #close-carosello { right: 15.5px !important}
+}
+
+@media only screen and (max-width: 769px) {
+    @media (min-width: 480.5px){
+        #wrapper-gallery { padding-bottom: 210px }
+
+        #full-logo-divider img { padding-inline: 35px }    
+    }
+
+    #carosello { min-height: 400px }
+    #carosello-img-wrapper { min-height: 300px}
+
+    .topleft-section { padding-right: 0 }
+
+    #gallery {
+        grid:
+            "topleft-section topleft-section topleft-section" min(250px, calc(320px - 20vw))
+            ". hor-1 hor-1" 200px
+            "hor-2 hor-2 ." 200px
+            "vert-1 vert-2 ." 200px
+            "vert-1 vert-2 ." 200px
+            "hor-3 hor-3 ." 200px
+            ". hor-4 hor-4" 200px
+            "vert-3 hor-5 hor-5" 200px
+            "vert-3 . ." 200px
+            ". . ." 200px
+            ". hor-6 hor-6" 200px
+            / 1fr 1fr 1fr; 
+    }
+}
+
+@media only screen and (max-width: 1024.5px) {
+    @media (min-width: 769px) {
+        #carosello { min-height: 400px }
+        #carosello-img-wrapper { min-height: 300px}
+        #wrapper-gallery { padding-bottom: 210px }
+    
+        #full-logo-divider img { padding-inline: 13vw }
+        
+        #gallery {
+            grid:
+                "topleft-section topleft-section topleft-section . vert-1" 220px
+                ". . . . vert-1" 220px
+                "hor-1 hor-1 . . ." 220px
+                ". . . hor-2 hor-2" 220px
+                "vert-2 vert-3 . . ." 220px
+                "vert-2 vert-3 . . ." 220px
+                / 1fr 1fr 1fr 1fr 1fr;
+        }
+    }
+
+    #carosello-img-wrapper {
+        height: 100%;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .btns-wrapper { width: 40px }
+    #close-carosello {
+        width: 40px;
+        top: 90px;
+        right: calc(clamp(60px, 6vw, 100px) - 15px);
+    }
+
+    .video-img-wrapper {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        margin-top: 21px;
+        margin-bottom: 21px;
+    }
+    .video-mobile-title { display: block }
+    .article-text-wrapper h2, .article-text-wrapper h3 { display: none }
+}
+
+@media only screen and (max-width: 1366px) {
+    @media (min-width: 770px){
+        .topleft-section { padding-right: 30px }
+    }
+
+    @media (min-width: 1025px){
+        .article-text-wrapper h2 { font-size: 1.6rem }
+
+        #carosello { min-height: 550px }
+        #carosello-img-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 125px;
+            padding-right: 140px;
+            min-height: 450px;
+        }
+        #carosello-img-wrapper img { align-self: center }
+    }
+
+    #wrapper-videos-section { padding-top: 70px }
+    #videos-section { padding: 0 }
+
+    .gallery-divider {
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+}
+
+@media only screen and (max-width: 810px) {
+    .article-text-wrapper br {
+        display: none;
+    }
+}

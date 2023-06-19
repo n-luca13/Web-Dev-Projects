@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP:X-Forwarded-Proto} !=https 
+RewriteCond %{HTTPS} =off 
+RewriteCond %{HTTP_HOST} phasesband\.it [NC]
+RewriteRule ^(.*) https://www.phasesband.it/$1 [R=301,L] 
+</IfModule>

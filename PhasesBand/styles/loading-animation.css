@@ -1,0 +1,73 @@
+#loader-wrapper{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.7);
+    z-index: 2;
+}
+
+#loader-wrapper > #flex-container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+#loader-wrapper > #flex-container > #loading-logo > img{
+    width: 210px;
+    height: 100%;
+}
+
+#loader-wrapper > #flex-container > #gooey{
+    width: 142px;
+    height: 40px;
+    filter: contrast(0.8);
+    margin-left: -20px;
+}
+
+#loader-wrapper > #flex-container > #gooey > #special-dot{
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    top: 12px;
+    left: 8px;
+    filter: blur(0.3px);
+    background: #d0a842;
+    border-radius: 50%;
+    transform: translateX(0);
+    animation: dot 2.8s infinite;
+}
+
+#loader-wrapper > #flex-container > #gooey > #dots-container{
+    transform: translateX(0);
+    margin-top: 12px;
+    margin-left: 38px;
+    animation: dots 2.8s infinite;
+}
+
+.common-dot{
+    display: block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-left: 16px;
+    filter: blur(0.4px);
+    background: #000;
+    border-radius: 50%;
+}
+
+@keyframes dot {
+    50% {
+        transform: translateX(96px);
+    }
+} 
+@keyframes dots {
+    50% {
+        transform: translateX(-31px);
+    }
+}
