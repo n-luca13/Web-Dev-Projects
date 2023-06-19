@@ -1,0 +1,66 @@
+/* FULL SCREEN SECTION */
+#main-titles-wrapper {
+    background-image: url('../media/photos/Weddings_preview.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#main-titles-section h1 {
+    margin: 0px 0px 7px 0px;
+    color: #F5F4F5;
+}
+
+#main-titles-section h2 {
+    margin: 15px 0px 0px 0px;
+    color: #F5F4F5;
+}
+
+
+/* CHRONICLE SECTION */
+.grid-element {
+    position: relative;
+    padding: 0;
+    height: 260px;
+}
+
+.grid-img-holder { text-align: center }
+
+.absolute-text-container {
+    width: calc(100% + 100px);
+    background-color: #F5F4F5;
+    position: absolute;
+    padding: 10px 0;
+}
+.absolute-text-container i {
+    color: inherit;
+    transition: none;
+    font-size: inherit;
+}
+
+.left-txt {
+    text-align: right;
+    right: -100px;
+}
+
+.right-txt {
+    text-align: left;
+    left: -100px;
+}
+
+
+
+/* CALL TO ACTION */
+#full-logo-divider {
+    display: none;
+    position: relative;
+    z-index: 1;
+    transform: translate(0.3%, 41%);
+    height: 160px;
+}
+
+#cta-left-wrapper {padding: 70px clamp(50px, 4vw, 75px)}
+#cta-left-wrapper, #cta-right-wrapper { height: 320px }
+#cta-left-wrapper #cta-btns-container{ justify-content: space-between }
+#cta-right-wrapper { background-color: #F5F4F5 }
+#cta-right-wrapper h2 { color: #1c1c1c }

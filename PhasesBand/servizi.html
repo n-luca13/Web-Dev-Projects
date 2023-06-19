@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Ricreiamo le sonorità che hanno fatto la storia della Disco Music in vivaci serate di musica dal vivo e in eleganti ricevimenti dedicati a occasioni speciali.">
+    <title>Scopri i nostri servizi &ndash; Phases Band</title>
+
+    <script src="https://kit.fontawesome.com/c40b68c93c.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/servizi.css">
+    <link rel="stylesheet" href="styles/square-layout.css">
+
+    <link rel="stylesheet" href="styles/common-media-queries.css">
+    <link rel="stylesheet" href="styles/servizi-media-queries.css">
+
+    <script src="js/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <div id="sidenav">
+        <div id="sidenav-btn-close-wrapper">
+            <button id="sidenav-btn-close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    
+        <div id="sidenav-wrapper">
+            <div class="sidenav-link-container"><a class="sidenav-link" href="index.html">Home</a></div>
+            <div class="sidenav-link-container"><a class="sidenav-link" href="servizi.html#chisiamo-anchor-div">Chi Siamo</a></div>
+            <div class="sidenav-link-container">
+                <button id="btn-open-dropdown-servizi" class="sidenav-dropdown-btn"><i class="fa fa-caret-down"></i></button>
+                <a class="sidenav-link" href="#" id="link-servizi">Servizi</a>
+            </div>
+            <div id="sidenav-dropdown-servizi">
+                <ul>
+                    <li class="sidenav-link-container">
+                        <a class="sidenav-link" href="servizi/weddings.html">Matrimoni</a>
+                    </li>
+                    <li class="sidenav-link-container">
+                        <a class="sidenav-link" href="servizi/disco_inferno.html">Disco Inferno</a>
+                    </li>
+                    <li class="sidenav-link-container">
+                        <a class="sidenav-link" href="servizi/private_party.html">Feste private</a>
+                    </li>
+                    <li class="sidenav-link-container">
+                        <a class="sidenav-link" href="servizi/partners.html">DJ e Animatori</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidenav-link-container"><a class="sidenav-link" href="galleria.html">Galleria</a></div>
+            <div class="sidenav-link-container"><a class="sidenav-link" href="contatti.html">Contatti</a></div>
+            <div class="sidenav-link-container"><a class="sidenav-link" href="faq.html">FAQ</a></div>
+        </div>
+
+        <div id="sidenav-bottom-wrapper">
+            <div id="sidenav-logo">
+                <img src="media/loghi/phases_logo_header.png" alt="Phases Band logo">
+            </div>
+    
+            <div id="sidenav-social-media-links" class="small-social-media-links">
+                <a href="https://www.facebook.com/PhasesLiveBand" target="_blank" title="Facebook.com - Phases Live Band" class="flex-col-center">
+                    <img id="logo-facebook-footer" src="media/loghi/terze_parti/f_logo_RGB-White_58.png" alt="Facebook.com"/>
+                </a>
+                <a href="https://www.matrimonio.com/musica-matrimonio/phases-live-band--e234901" target="_blank" title="Matrimonio.com - Phases Live Band" class="flex-col-center">
+                    <span id="logo-matrimoniocom-footer"></span>
+                </a>
+                <a href="https://www.instagram.com/PhasesLiveBand/" target="_blank" title="Instagram.com - Phases Live Band" class="flex-col-center">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.musiqua.it/band/phases-band-8309" target="_blank" title="Musiqua.it - Phases Band" class="flex-col-center">
+                    <img id="logo-musiquait-footer" src="media/loghi/terze_parti/logo_musiqua_lente_bianca.png" alt="Musiqua.it"/>
+                </a>
+                <a href="https://www.youtube.com/channel/UCzKWjXqjQz3L-RrKxNKYWNQ" title="YouTube.com - Phases Band" target="_blank" class="flex-col-center">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+    
+            <div class="copyright-wrapper">
+                &copy; 2023 Phases Band <br>Tutti i diritti riservati <br>A cura di <a href='https://it.linkedin.com/in/lnuzzo13?trk=profile-badge' title="Profilo LinkedIn di Luca Nuzzo"  target="_blank">Luca Nuzzo <i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="page-wrapper">
+        <header id="header">
+            <div id="header-logo">
+                <a href="./index.html">
+                    <img src="media/loghi/phases_logo_header.png" alt="Phases Band logo">
+                </a>
+            </div>
+            <nav id="header-nav">
+                <ul>
+                    <li><a class="header-link" href="index.html">Home</a></li>
+                    <li><a class="header-link" href="#chisiamo-anchor-div">Chi Siamo</a></li>
+                    <li><a class="header-link" href="#" id="link-servizi">Servizi</a>
+                        <div class="dropdown-menu">
+                            <a class="header-sublink" href="servizi/weddings.html">Matrimoni</a>
+                            <a class="header-sublink" href="servizi/disco_inferno.html">Disco Inferno</a>
+                            <a class="header-sublink" href="servizi/private_party.html">Feste private</a>
+                            <a class="header-sublink" href="servizi/partners.html">DJ e Animatori</a>
+                        </div>
+                    </li>
+                    <li><a class="header-link" href="galleria.html">Galleria</a></li>
+                    <li><a class="header-link" href="contatti.html">Contatti</a></li>
+                    <li><a class="header-link" href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+            <button id="sidenav-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </header>
+    
+        <div id="full-screen-container">
+            <div id="background-container">
+                <img class="img-background" id="gotodiscoinferno-background" src="media/photos/DiscoInferno_preview.jpg">
+                <img class="img-background" id="gotoweddings-background" src="media/photos/Weddings_preview.jpg" style="display: none;">
+                <img class="img-background" id="gotoprivateparty-background" src="media/photos/PrivateParty_Preview.jpg" style="display: none;">
+            </div>
+            <div id="main-titles-wrapper">
+                <div id="progress-bar-wrapper">
+                    <div id="progress-bar">
+                        <span id="progress-bar-fill"></span>
+                    </div>
+                </div>
+
+                <div id="dots-wrapper">
+                    <div id="dots-container">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <section id="main-titles-section">
+                    <a href="servizi/disco_inferno.html" class="main-section-btn" id="gotodiscoinferno" title="Vai alla pagina Disco Inferno">
+                        <div class="ghostdiv"></div>
+                        <h2 lang="en">Disco Inferno Night<i class="fa-solid fa-circle-arrow-right"></i></h2>
+                        <p>Tutta la Disco Music in una sola notte!<br>Una cronistoria di canzoni cult, immagini e colori dal 1970 al 1990.</p>
+                    </a>
+                    <a href="servizi/weddings.html" class="main-section-btn" id="gotoweddings" title="Vai alla pagina Weddings">
+                        <div class="ghostdiv"></div>
+                        <h2 lang="en">Weddings<i class="fa-solid fa-circle-arrow-right"></i></h2>
+                        <p>Una selezione personalizzata di ritmi e melodie intramontabili per il matrimonio dei tuoi sogni.</p>
+                    </a>
+                    <a href="servizi/private_party.html" class="main-section-btn" id="gotoprivateparty" title="Vai alla pagina Private Party">
+                        <div class="ghostdiv"></div>
+                        <h2 lang="en">Private Party<i class="fa-solid fa-circle-arrow-right"></i></h2>
+                        <p>Intrattenimento per feste aziendali, compleanni, anniversari e altre occorrenze speciali.</p>
+                    </a>
+                </section>
+                <div class="btns-wrapper" id="left-btns-wrapper">
+                    <button class="btn-change-bckgrnd" id="previous-service"><i class="fa-solid fa-angle-left"></i></button>
+                </div>
+                <div class="btns-wrapper" id="right-btns-wrapper">
+                    <button class="btn-change-bckgrnd" id="next-service"><i class="fa-solid fa-angle-right"></i></button>
+                </div>      
+            </div>
+        </div>
+       
+       
+        <div id="chisiamo-anchor-div"></div>
+        <div class="content-wrapper">
+            <section id="chi-siamo">
+                <section id="presentation-container">
+                    <div id="presentation-img-container">
+                        <img src="media/photos/Band_1280.jpg">
+                    </div>
+                    <article>
+                        <header>
+                            <h2>Chi Siamo</h2>
+                        </header>
+                        <p>Phases Band è un progetto musicale nato con l&#39;intento di dare nuova vita ai brani che più hanno segnato la storia della musica internazionale. Il <b>repertorio</b>, vasto e personalizzabile, comprende brani che spaziano dalla Disco Music ai grandi classici del Pop Rock. Il progetto ha accumulato una lunga <b>esperienza</b> in live club, eventi pubblici e sale di ricevimento nel Sud Italia, dove ha sempre raccolto ottime impressioni da tutti gli invitati.</p>
+                        <p><b>Eleganza, flessibilità e coinvolgimento</b> sono le parole chiave che contraddistinguono una band particolarmente affine all’accompagnamento musicale per matrimoni, ricevimenti e altre ricorrenze speciali. Esperienza e professionalità sono orchestrate per offrire un servizio energico e divertente, elegante e raffinato, funzionale alla buona riuscita di un evento indimenticabile. </p>
+                    </article>
+                </section>
+    
+                <div class="divider">
+                    <span></span>
+                    <span><h4>Le nostre voci</h4></span>
+                    <span></span>
+                </div>
+    
+                <section id="squares-wrapper">
+                    <div id="squares-sub-wrapper">
+                        <div class="column-grid sticky-element" id="rossana">
+                            <div class="squares-img-section">
+                                <div class="img-spacer"></div>
+                                <div class="img-container">
+                                    <img class="corner-left-img" src="media/photos/SquareRox_1280.jpg" alt="Rossana Laquale - Cantante"/>
+                                </div>
+                            </div>
+                            <div class="text-wrapper">
+                                <div class="text-container pad-left">
+                                    <h2>Rossana Laquale</h2>
+                                    <h3>Cantante</h3>
+                                    <p><i class="fas fa-quote-left"></i>Ho una voce calda, potente, dinamica su impostazione belting.</p>
+                                    <p>Oltre ad avere esperienza live come cantante solista in situazioni differenti fra loro come matrimoni, pranzi spettacolo, cene spettacolo, concorsi, serate di piazza, pub e feste private, ho lavorato molto sul canto corale, sviluppando così una migliore capacità di armonizzazione delle voci.</p>
+                                    <p>Ho partecipato come allieva a vari master con artisti dello spettacolo, alcuni dei quali Cheryl Porter, Luca Jurman, Luca Pitteri, Mariella Nava, Massimo Varini, Linda Valori. Ho vinto, tramite concorsi, tre borse di studio di cui due alla hope music school di Roma e una per area sanremo giovani. Ho avuto l'onore di duettare con Sharita Duran, cantante americana, in un christmas show.</p>
+                                </div>
+                                <div class="text-spacer"></div>
+                            </div>
+                        </div>
+                        <div class="column-grid sticky-element" id="walter">
+                            <div class="text-wrapper">
+                                <div class="text-spacer"></div>
+                                <div class="text-container pad-right">
+                                    <h2>Walter Nuzzo</h2>
+                                    <h3>Chitarrista - Tecnico del suono</h3>
+                                    <p><i class="fas fa-quote-left"></i>Inizio il mio percorso musicale come chitarrista nel 2008 all'età di quindici anni. Da allora sono sempre stato molto attivo nel settore, gestendo in prima persona l'attività e la pubblicità di numerosi progetti live, con alcuni dei quali ho conseguito importanti risultati, sia nel campo dei live sia della musica inedita, tra cui la pubblicazione di un album con i Broken Frames a livello internazionale, sotto etichetta Digressione Music.</p> 
+                                    <p>Laureato in Informatica nel 2017, decido di non proseguire la mia carriera da programmatore per conseguire una laurea in Commercial Music nel 2019 presso la University of West Scotland: grazie a ciò, acquisisco numerose conoscenze nel campo del Sound Design ed avvio un'attività di Recording Studio intitolata MUB.</p>
+                                    <p>Ho all'attivo centinaia di concerti in qualunque tipo di situazione, dal piccolo club fino alle piazze e una strumentazione professionale e sempre in costante aggiornamento.</p>
+                                </div>
+                            </div>
+                            <div class="squares-img-section">
+                                <div class="img-container">
+                                    <img class="corner-right-img" src="media/photos/SquareWalt_1280.jpg" alt="Walter Nuzzo - Chitarrista e tecnico del suono"/>
+                                </div>
+                                <div class="img-spacer"></div>
+                            </div>
+                        </div>
+                        <div class="column-grid sticky-element" id="alex">
+                            <div class="squares-img-section">
+                                <div class="img-spacer"></div>
+                                <div class="img-container">
+                                    <img class="corner-left-img" src="media/photos/SquareAle_1280.jpg" alt="Alessandro Giannuzzi - Bassista"/>
+                                </div>
+                            </div>
+                            <div class="text-wrapper">
+                                <div class="text-container pad-left">
+                                    <h2>Alessandro Giannuzzi</h2>
+                                    <h3>Bassista</h3>
+            
+                                    <p><i class="fas fa-quote-left"></i>Avvio la mia esperienza musicale con lo studio della chitarra ma in seguito vengo rapito dal ritmo e le frequenze del basso, strumento che appassiona e caratterizza il cuore di ogni pezzo musicale.</p>     
+                                    <p>Preso dalle basse frequenze, inizio a suonare in diversi gruppi musicali, spaziando per lo più tra rock, pop e metal ma cogliendo ogni occasione per mettermi alla prova con nuove sonorità, perché quello che conta veramente é la passione per quello che si fa, senza etichette, senza stereotipi.</p>
+                                    <p>La caratteristica piú bella della musica é la sua natura di linguaggio universale, al contempo capace di trasmettere diverse sfumature di significato a ciascuno di noi, scatenando ricordi, sensazioni ed emozioni uniche; per questo credo che la musica sia la vera cura per l'anima.</p>
+                                </div>
+                                <div class="text-spacer"></div>
+                            </div>
+                        </div>
+                        <div class="column-grid sticky-element" id="luca">
+                            <div class="text-wrapper">
+                                <div class="text-spacer"></div>
+                                <div class="text-container pad-right">
+                                    <h2>Luca Nuzzo</h2>
+                                    <h3>Batterista</h3>
+                                    
+                                    <p><i class="fas fa-quote-left"></i> Mi innamoro della batteria nel gennaio 2008, dopo aver visto un assolo di Mel Gaynor. Inizia così la mia carriera da musicista, grazie alla quale potuto vivere delle esperienze indimenticabili e tracciare un sentiero indelebile fatto di amicizia, sudore, fallimenti e successi, cui non rinuncerei per nulla al mondo.</p>
+                                    <p>Posso vantare una decennale esperienza nella musica dal vivo, spaziando dai piccoli pub sino alle piazze comunali, nonché un album di musica inedita.</p>
+                                    <p>Sono sempre alla ricerca di nuove sonorità, implementando delle percussioni elettroniche per garantire uno spettacolo coinvolgente, con un sound d&#39;impatto e fedele ai brani originali.</p>
+                                </div>
+                            </div>
+                            <div class="squares-img-section">
+                                <div class="img-container">
+                                    <img class="corner-right-img" src="media/photos/SquareLuca_1280.jpg" alt="Luca Nuzzo - Batterista"/>
+                                </div>
+                                <div class="img-spacer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            
+            <div class="spacer-100"></div>
+    
+            <div id="full-logo-divider">
+                <img src="media/loghi/phases_logo_divider_short.png"/>
+            </div>
+            <div id="calltoaction-container">
+                <div id="cta-left-wrapper">
+                    <div class="cta-common-wrapper" id="cta-img-wrapper">
+                        <img src="media/photos/Partners_Preview.jpg">
+                    </div>
+                </div>
+                <div id="cta-right-wrapper">
+                    <div class="cta-common-wrapper">
+                        <h2>Il nostro team di DJ e animatori</h2>
+                        <p class="white-color">
+                            Collaboriamo stabilmente con un team ristretto di DJ, vocalist e animatori per garantire un intrattenimento di qualità a 360°, in ricevimenti, feste private e spettacoli Disco Inferno.
+                        </p>
+                        <div id="cta-btns-container">
+                            <a href="servizi/partners.html" class="btn"><span>Scopri di più</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="spacer-100"></div>
+    
+            <div id="gallery-preview">
+                <div id="instagram-links-wrapper">
+                    <a href="https://www.instagram.com/PhasesLiveBand/" target="_blank" title="Instagram.com - Phases Live Band">
+                        <div id="instalogo-container">
+                            <span></span>
+                        </div>
+                        <h4>Phases</h4>
+                    </a>
+                </div>
+                <div id="photos-wrapper">
+                    <div class="photo-container"></div>
+                    <div class="photo-container"></div>
+                    <div class="photo-container"></div>
+                    <div class="photo-container"></div>
+                    <div class="photo-container"></div>
+                </div>
+                <div id="btn-galleria-container" class="centered-button-wrapper">
+                    <a href="galleria.html" class="btn secondary-btn"><span>Esplora la Galleria</span></a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="spacer-100"></div>
+    
+        <a href="https://wa.me/+393335317979" target="_blank" id="whatsapp-floating-btn" title="Contattaci su WhatsApp" style="display: none">
+            <span id="whatsapp-floating-icon"></span>
+        </a>
+    
+        <footer>
+            <div id="footer-logo">
+                <img src="media/loghi/phases_logo_white_footer.png" alt="Phases Band logo bianco">
+            </div>
+    
+            <div id="footer-social-media-links" class="small-social-media-links">
+                <a href="https://www.facebook.com/PhasesLiveBand" target="_blank" title="Facebook.com - Phases Live Band" class="flex-col-center">
+                    <img id="logo-facebook-footer" src="media/loghi/terze_parti/f_logo_RGB-White_58.png" alt="Facebook.com"/>
+                </a>
+                <a href="https://www.matrimonio.com/musica-matrimonio/phases-live-band--e234901" target="_blank" title="Matrimonio.com - Phases Live Band" class="flex-col-center">
+                    <span id="logo-matrimoniocom-footer"></span>
+                </a>
+                <a href="https://www.instagram.com/PhasesLiveBand/" target="_blank" title="Instagram.com - Phases Live Band" class="flex-col-center">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.musiqua.it/band/phases-band-8309" target="_blank" title="Musiqua.it - Phases Band" class="flex-col-center">
+                    <img id="logo-musiquait-footer" src="media/loghi/terze_parti/logo_musiqua_lente_bianca.png" alt="Musiqua.it"/>
+                </a>
+                <a href="https://www.youtube.com/channel/UCzKWjXqjQz3L-RrKxNKYWNQ" title="YouTube.com - Phases Band" target="_blank" class="flex-col-center">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+    
+            <div class="copyright-wrapper">
+                &copy; 2023 Phases Band &#124; Tutti i diritti riservati<br>A cura di <a href='https://it.linkedin.com/in/lnuzzo13?trk=profile-badge' title="Profilo LinkedIn di Luca Nuzzo"  target="_blank">Luca Nuzzo <i class="fab fa-linkedin"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/ajax-instagram-content.js"></script>
+    <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+    <script src="js/servizi-preview.js"></script>
+    <script src="js/squares-animation.js"></script>
+    <script src="js/whatsapp-handler.js"></script>
+    <script src="js/sidenav.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+@media only screen and (max-width: 400px) {
+    @media (max-height: 700px) {
+        #btn-videopromo-container { bottom: 220px }
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    #btn-videopromo-container {
+        padding-inline: 21px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    #gif-handler-wrapper { margin-bottom: 400px }
+    
+    #cta-right-wrapper { height: 360px }
+}
+
+@media only screen and (max-width: 482px) {
+    @media only screen and (min-width: 431px) {
+        #cta-right-wrapper { height: 270px }
+    }    
+
+    #gif-handler-wrapper { padding-left: 18px }
+}
+
+@media only screen and (max-width: 769px) {
+    @media only screen and (min-width: 482px) {
+        #gif-handler-wrapper { padding-left: 30px }
+    
+        #cta-right-wrapper { height: 240px }
+    }
+
+    #brand-values {
+        display: block;
+        padding: 0;
+    }
+    #brand-values > #right-clmn { display: none }
+    .value-container > p br { display: none }
+
+    .content-wrapper > .spacer-100 { height: 30px }
+    .content-wrapper > .spacer-100 ~ .spacer-100 { height: 100px }
+
+    #calltoaction-container {
+        display: block;
+        background-color: transparent;
+    }
+
+    #cta-left-wrapper { display: none }
+    #cta-right-wrapper { border-radius: 0 !important }
+    #cta-btns-container { justify-content: space-between }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 800px) {
+    .value-container > p br { display: none } 
+}
+
+@media only screen and (max-width: 1024px) {
+    @media only screen and (min-width: 769px) {
+        #brand-values { padding: 0 }
+
+        #cta-right-wrapper { height: 290px }
+        #cta-btns-container { justify-content: space-between }
+    }
+}
+
+
+@media only screen and (max-width: 1366px) {
+    #full-logo-divider { display: block }
+
+    @media (min-width: 769px) {
+        #brand-values { display: block }
+        #brand-values > #right-clmn { display: none }
+    
+        .content-wrapper > .spacer-100 { display: none }
+        .content-wrapper > .spacer-100 ~ .spacer-100 { display: block }
+    
+        #calltoaction-container {
+            display: block;
+            background-color: transparent;
+        }
+        #cta-left-wrapper { display: none }
+        #cta-right-wrapper { border-radius: 50px }
+    }
+
+    @media (min-width: 1024px) {
+        #cta-right-wrapper { padding-inline: clamp(100px, 8vw, 150px) }
+        #cta-btns-container { justify-content: space-around }
+        #cta-right-wrapper { height: 270px }
+    }
+}

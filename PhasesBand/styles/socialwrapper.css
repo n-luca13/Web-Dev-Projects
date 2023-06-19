@@ -1,0 +1,227 @@
+/*  CONTAINER SOCIAL */
+#container-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px clamp(100px, 8vw, 150px);
+}
+
+#container-social h1{ color: #d0a842 }
+
+#container-social > .social-media-icons-wrapper {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: space-between;
+}
+
+#container-social > .social-media-icons-wrapper a {
+    width: fit-content;
+    height: 100%;
+}
+
+#container-social > .social-media-icons-wrapper i{
+    color: black;
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+
+#container-social > .social-media-icons-wrapper i:hover{
+    color: #d0a842;
+}
+
+/*  SOCIAL-MEDIA-ICONS-WRAPPER */ 
+#container-social > .social-media-icons-wrapper a > #logo-ext-facebook {
+    background-image: url(../media/loghi/terze_parti/black_logo_facebook.svg);
+    display: inline-block;
+    width: 125px;
+    height: 60%;
+    background-size: cover;
+    transition: 0.3s;
+}
+
+#container-social > .social-media-icons-wrapper a > #logo-ext-facebook:hover{
+    filter: invert(61%) sepia(35%) saturate(680%) hue-rotate(4deg) brightness(95%) contrast(107%);
+}
+
+#container-social > .social-media-icons-wrapper a > #logo-ext-matrimoniocom {
+    background-image: url(../media/loghi/terze_parti/black_logo_matrimonio.svg);
+    display: inline-block;
+    width: 230px;
+    height: 70%;
+    background-size: cover;
+    transition: 0.3s;
+}
+
+#container-social > .social-media-icons-wrapper a > #logo-ext-matrimoniocom:hover{
+    filter: invert(61%) sepia(35%) saturate(680%) hue-rotate(4deg) brightness(95%) contrast(107%);
+}
+
+#container-social > .social-media-icons-wrapper a > #logo-ext-instagram {
+    background-image: url(../media/loghi/terze_parti/black_logo_instagram.svg);
+    display: inline-block;
+    width: 120px;
+    height: 100%;
+    background-size: cover;
+    margin-top: 1px;
+    transition: 0.3s;
+}
+
+#container-social > .social-media-icons-wrapper a > #logo-ext-instagram:hover{
+    filter: invert(61%) sepia(35%) saturate(680%) hue-rotate(4deg) brightness(95%) contrast(107%);
+}
+
+#container-social > .social-media-icons-wrapper a > #logo-ext-youtube {
+    background-image: url(../media/loghi/terze_parti/black_logo_youtube.svg);
+    display: inline-block;
+    width: 128px;
+    height: 70%;
+    background-size: cover;
+    transition: 0.3s;
+}
+
+#container-social > .social-media-icons-wrapper a > #logo-ext-youtube:hover{
+    filter: invert(61%) sepia(35%) saturate(680%) hue-rotate(4deg) brightness(95%) contrast(107%);
+}
+
+#container-social > .social-media-icons-wrapper a > #logo-ext-musiquait {
+    width: 135px;
+    margin-top: 8px;
+    transition: 0.3s;
+}
+#container-social > .social-media-icons-wrapper a > #logo-ext-musiquait:hover{
+    filter: invert(61%) sepia(35%) saturate(680%) hue-rotate(4deg) brightness(95%) contrast(107%);
+}
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 769px) {
+    #container-social > .social-media-icons-wrapper {
+        flex-direction: column;
+        height: 260px;
+    }
+
+    #container-social > .social-media-icons-wrapper a {
+        height: 35px;
+    }
+    .social-media-icons-wrapper a {
+        text-align: center;
+        align-items: center;
+    }
+
+    .sm-link-wrapper {
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .social-media-icons-wrapper a:first-child {
+        order: 2;
+    }
+    .social-media-icons-wrapper a:nth-child(2){
+        order: 4;
+    }
+    .social-media-icons-wrapper a:nth-child(3){
+        order: 1;
+    }
+    .social-media-icons-wrapper a:nth-child(4){
+        order: 3;
+    }
+    .social-media-icons-wrapper a:nth-child(5){
+        order: 5;
+    }
+    #container-social > .social-media-icons-wrapper a > #logo-ext-matrimoniocom {
+        height: 59%;
+
+        width: 168px;
+        margin-bottom: 8px;
+    }
+    #container-social > .social-media-icons-wrapper a > #logo-ext-musiquait {
+        width: 90px;
+        margin-top: 1px;
+    }
+    #container-social > .social-media-icons-wrapper a > #logo-ext-facebook {
+        height: 44%;
+        width: 79px;
+        margin-bottom: 3px;
+    }
+    #container-social > .social-media-icons-wrapper a > #logo-ext-instagram {
+        height: 82%;
+        width: 86px;
+        margin-bottom: 4px;
+    }
+    #container-social > .social-media-icons-wrapper a > #logo-ext-youtube { 
+        height: 55%;
+        width: 86px;
+        margin-bottom: 3px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    @media only screen and (min-width: 769px) {
+        #container-social > .social-media-icons-wrapper {
+            display: grid;
+            grid: 
+                "l1p1 l1p1 l1p2 l1p2 l1p3 l1p3" auto
+                ". l2p1 l2p1 l2p2 l2p2 ." auto
+                / 1fr 1fr 1fr 1fr 1fr 1fr;
+            row-gap: 21px;
+            height: auto;
+        }
+
+        .sm-link-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .l1p1 { justify-content: start }
+        .l2p1 {
+            justify-content: start;
+            padding-left: 30px;
+        }
+        .l1p3 { justify-content: end }
+        .l2p2 {
+            justify-content: end;
+            padding-right: 23px;
+        }
+
+        .social-media-icons-wrapper div {
+            text-align: center;
+            height: 45px
+        }
+
+        #container-social > .social-media-icons-wrapper a > #logo-ext-matrimoniocom {
+            width: 218px;
+            height: 59%;
+        }
+        #container-social > .social-media-icons-wrapper a > #logo-ext-musiquait {
+            margin-top: 9px;
+            width: 120px;
+        }
+        #container-social > .social-media-icons-wrapper a > #logo-ext-facebook {
+            width: 105px;
+            height: 45%;
+        }
+        #container-social > .social-media-icons-wrapper a > #logo-ext-instagram {
+            width: 116px;
+            height: 82%;
+        }
+        #container-social > .social-media-icons-wrapper a > #logo-ext-youtube { 
+            width: 111px;
+            height: 55%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    #container-social{ padding: 0 }
+}
+
+.l1p1{ grid-area: l1p1 }
+.l1p2 { grid-area: l1p2 }
+.l1p3 { grid-area: l1p3 }
+.l2p1 { grid-area: l2p1 }
+.l2p2 { grid-area: l2p2 }

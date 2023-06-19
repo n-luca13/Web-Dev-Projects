@@ -1,0 +1,271 @@
+@media only screen and (max-width: 400px) {
+    @media (max-height: 700px) {
+        #main-titles-section { height: 190px }
+    }
+}
+
+@media only screen and (max-width: 430px) { 
+    h1 { font-size: 1.8rem }
+    h2 { font-size: 1.2rem }
+
+    .btn { width: 100% }
+
+    #cta-btns-container {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .short-divider { width: 100% }
+}
+
+@media only screen and (max-width: 482px) {
+    .btn::before {
+        width: 150%;
+        left: -25%;
+    }
+    
+    body { min-width: 339px }
+
+    #header-logo { padding-left: 21px }
+
+    .content-wrapper { padding: 80px 21px }
+    #main-titles-section { padding-inline: 21px }
+
+    #whatsapp-floating-btn {
+        right: 21;
+        bottom: 21px;
+    }
+
+    #photos-wrapper > .photo-container {
+        width: 100%;
+        height: calc(100vw - 42px - 14px);
+        min-width: 280px;
+        min-height: 280px;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    @media (min-width: 430.5px) {
+        h1 { font-size: 2rem }
+        h2 { font-size: 1.3rem }
+    
+        .btn { width: 180px }
+        .short-divider { width: 55vw }
+    }
+
+    @media (min-width: 482.5px) {
+        .btn { width: 180px }
+    
+        #header-logo { padding-left: 35px }
+    
+        .content-wrapper { padding: 80px 35px }
+        #main-titles-section { padding-inline: 35px }
+    
+        #whatsapp-floating-btn {
+            right: 35px;
+            bottom: 35px;
+        }
+    
+        #photos-wrapper > .photo-container {
+            width: 190px;
+            height: 190px;
+        }
+    }
+
+    h3 { font-size: 1rem }
+    p { font-size: 1rem }
+
+    .divider { margin: 100px 0px 28px 0px }
+    .divider span:first-child, .divider span:last-child { top: 26px }
+    h4 {
+        font-size: 2.5rem;
+        margin: auto 7px;
+    }
+    
+    #full-screen-container { min-height: 550px }
+    #main-titles-section h2 { line-height: 28px }
+
+    #photos-wrapper {
+        flex-wrap: wrap;
+        gap: 14px;
+        justify-content: center;
+    }
+
+    #matrimoniocom-api-container { padding-inline: 0 }
+}
+
+@media only screen and (max-width: 1024px) {
+    @media (min-width: 769px) {
+        h2 { font-size: 1.6rem }
+        .btn { width: 240px }
+    
+        #photos-wrapper {
+            flex-wrap: wrap;
+            gap: 21px;
+            justify-content: center;
+        }
+    
+        #photos-wrapper > .photo-container {
+            width: 190px;
+            height: 190px;
+        }
+
+        #matrimoniocom-api-container { padding-inline: clamp(60px, 6vw, 100px) }
+    }
+
+    @media (min-width: 900px){
+        #photos-wrapper { margin-inline: 40px }
+    }
+    
+    #header-nav { display: none }
+    #sidenav-btn { display: flex }
+
+    #presentation-container { display: block }
+    #presentation-container article {
+        padding-left: 0;
+        padding-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    @media (min-width: 482px) {
+        body { min-width: unset }
+    }
+
+    @media (min-width: 1024px) {
+        #photos-wrapper {
+            flex-wrap: wrap;
+            gap: 21px;
+            justify-content: center;
+        }
+    }
+
+    @media (min-width: 1200px){
+        #photos-wrapper { margin-inline: 70px }
+    }
+}
+
+
+
+/* SIDENAV-BOTTOM */
+@media only screen and (max-height: 725px) {
+    #sidenav-bottom-wrapper > .copyright-wrapper { display: none }
+
+    #sidenav-social-media-links { margin-bottom: 0 }
+}
+
+@media only screen and (max-height: 650px) {
+    #sidenav-logo { display: none }
+
+    #sidenav-social-media-links { margin-top: 0 }
+}
+
+@media only screen and (max-height: 580px) {
+    #sidenav-bottom-wrapper { display: none }
+}
+
+
+/* SCROLL LAYOUT (contatti e faq) */
+@media only screen and (max-width: 430px) {
+    #left-column p, #faqs-wrapper p { font-size: 0.9rem }
+}
+
+@media only screen and (max-width: 482px) {
+    .form-faq-common-wrapper, #left-column { padding-inline: 21px }
+
+    #left-column { height: max(91.5vh, 750px) }
+}
+
+@media only screen and (max-width: 768px) {
+    .form-faq-common-wrapper { padding-bottom: 90px }
+    @media only screen and (min-width: 483px) {
+        .form-faq-common-wrapper, #left-column { padding-inline: 35px }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .wrapper { display: block }
+    #left-column {
+        width: 100%;
+        height: calc(100vh - max(8.5vh, 65px));
+        min-height: 720px;
+        position: inherit;
+    }
+    .form-faq-common-wrapper { width: 100% }
+}
+
+@media only screen and (max-width: 1366px) {
+    @media only screen and (min-width: 1024px) {
+        #left-column {
+            width: calc(35% + 6vw);
+            padding-right: 30px;
+        }
+
+        .form-faq-common-wrapper{
+            width: calc(65% - 6vw);
+            padding-left: 30px;
+        }
+    }
+}
+
+
+/* CALL TO ACTION */
+@media only screen and (max-width: 482px) {
+    #calltoaction-container {
+        margin-left: -21px;
+        margin-right: -21px;
+    }
+    #cta-right-wrapper, #cta-left-wrapper { padding-inline: 21px }
+}
+
+@media only screen and (max-width: 769px) {
+    @media only screen and (max-width: 400px) { 
+        #full-logo-divider {
+            height: 100px;
+            transform: translate(-55px, 44%);
+            min-width: 350px;
+        }
+    }
+    @media only screen and (min-width: 400.5px) and (max-width: 520px) {
+        #full-logo-divider {
+            height: 100px;
+            transform: translate(min(-100px, -15vw), 41%);
+            min-width: 435px;
+        }
+    }
+    @media only screen and (min-width: 520.5px) {
+        #full-logo-divider {
+            height: 120px;
+            transform: translate(0%, 41%);
+        }
+    }
+    @media only screen and (min-width: 482.5px) {
+        #calltoaction-container {
+            margin-left: -35px;
+            margin-right: -35px;
+        }
+        #cta-right-wrapper, #cta-left-wrapper {
+            padding-inline: 35px;
+        }
+    }
+
+    #calltoaction-container p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #full-logo-divider { display: block }
+
+    @media only screen and (min-width: 769px) {
+        #full-logo-divider { height: 140px }
+        #cta-left-wrapper, #cta-right-wrapper { padding-inline: clamp(60px, 6vw, 100px) }
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    @media only screen and (min-width: 769px) {
+        #calltoaction-container h2 { font-size: 1.6rem }
+        #calltoaction-container p { font-size: 1.2rem }
+    } 
+}

@@ -1,0 +1,72 @@
+footer {
+    background-color: black;
+    color: #F5F4F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0px;
+}
+
+#footer-logo {
+    display: flex;
+    justify-content: center;
+}
+#footer-logo img { width: 150px }
+
+
+#footer-social-media-links {
+    display: flex;
+    margin: 12px 0px;
+    width: 300px;
+    height: 40px;
+    justify-content: space-around;
+}
+
+#footer-social-media-links a {
+    width: 40px;
+    align-items: center;
+}
+
+#logo-matrimoniocom-footer {
+    background-image: url(../media/loghi/terze_parti/logo_matrimoniocom.svg);
+    display: inline-block;
+    background-size: cover;
+    transition: 0.3s;
+    width: 22px;
+    height: 20px;
+}
+
+#logo-musiquait-footer {
+    width: 20px;
+    transition: 0.3s;
+}
+
+#logo-facebook-footer {
+    width: 22px;
+    transition: 0.3s;
+}
+
+.small-social-media-links i { pointer-events: none }
+
+.small-social-media-links a:hover i{
+    font-size: 1.6rem;
+    color: #d0a842;
+}
+
+.small-social-media-links a:hover img, .small-social-media-links a:hover span {
+    filter: invert(61%) sepia(35%) saturate(680%) hue-rotate(4deg) brightness(140%) contrast(107%);
+}
+
+.small-social-media-links a:hover #logo-facebook-footer {
+    width: 26px
+}
+
+.small-social-media-links a:hover #logo-musiquait-footer {
+    width: 23px
+}
+
+.small-social-media-links a:hover #logo-matrimoniocom-footer {
+    width: 24px;
+    height: 22px;
+}

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Esplora alcune istantanee del nostro spettacolo e scendi in pista: costumi, suoni e colori della Disco Music ti riscalderanno il cuore!">
+    <title>Galleria &ndash; Phases Band </title>
+
+    <script src="https://kit.fontawesome.com/c40b68c93c.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+        
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/galleria.css">
+    <link rel="stylesheet" href="styles/loading-animation.css">
+
+    <link rel="stylesheet" href="styles/common-media-queries.css">
+    <link rel="stylesheet" href="styles/galleria-media-queries.css">
+
+    <script src="js/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <div id="loading-page"></div>
+    
+    <div id="sidenav">
+        <div id="sidenav-btn-close-wrapper">
+            <button id="sidenav-btn-close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    
+        <div id="sidenav-wrapper">
+            <div class="sidenav-link-container"><a class="sidenav-link" href="index.html">Home</a></div>
+            <div class="sidenav-link-container"><a class="sidenav-link" href="servizi.html#chisiamo-anchor-div">Chi Siamo</a></div>
+            <div class="sidenav-link-container">
+                <button id="btn-open-dropdown-servizi" class="sidenav-dropdown-btn"><i class="fa fa-caret-down"></i></button>
+                <a class="sidenav-link" href="servizi.html" id="link-servizi">Servizi</a>
+            </div>
+            <div id="sidenav-dropdown-servizi">
+                <ul>
+                    <li class="sidenav-link-container">
+                        <a class="sidenav-link" href="servizi/weddings.html">Matrimoni</a>
+                    </li>
+                    <li class="sidenav-link-container">
+                        <a class="sidenav-link" href="servizi/disco_inferno.html">Disco Inferno</a>
+                    </li>
+                    <li class="sidenav-link-container">
+                        <a class="sidenav-link" href="servizi/private_party.html">Feste private</a>
+                    </li>
+                    <li class="sidenav-link-container">
+                        <a class="sidenav-link" href="servizi/partners.html">DJ e Animatori</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidenav-link-container"><a class="sidenav-link" href="#">Galleria</a></div>
+            <div class="sidenav-link-container"><a class="sidenav-link" href="contatti.html">Contatti</a></div>
+            <div class="sidenav-link-container"><a class="sidenav-link" href="faq.html">FAQ</a></div>
+        </div>
+
+        <div id="sidenav-bottom-wrapper">
+            <div id="sidenav-logo">
+                <img src="media/loghi/phases_logo_header.png" alt="Phases Band logo">
+            </div>
+    
+            <div id="sidenav-social-media-links" class="small-social-media-links">
+                <a href="https://www.facebook.com/PhasesLiveBand" target="_blank" title="Facebook.com - Phases Live Band" class="flex-col-center">
+                    <img id="logo-facebook-footer" src="media/loghi/terze_parti/f_logo_RGB-White_58.png" alt="Facebook.com"/>
+                </a>
+                <a href="https://www.matrimonio.com/musica-matrimonio/phases-live-band--e234901" target="_blank" title="Matrimonio.com - Phases Live Band" class="flex-col-center">
+                    <span id="logo-matrimoniocom-footer"></span>
+                </a>
+                <a href="https://www.instagram.com/PhasesLiveBand/" target="_blank" title="Instagram.com - Phases Live Band" class="flex-col-center">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.musiqua.it/band/phases-band-8309" target="_blank" title="Musiqua.it - Phases Band" class="flex-col-center">
+                    <img id="logo-musiquait-footer" src="media/loghi/terze_parti/logo_musiqua_lente_bianca.png" alt="Musiqua.it"/>
+                </a>
+                <a href="https://www.youtube.com/channel/UCzKWjXqjQz3L-RrKxNKYWNQ" title="YouTube.com - Phases Band" target="_blank" class="flex-col-center">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+    
+            <div class="copyright-wrapper">
+                &copy; 2023 Phases Band <br>Tutti i diritti riservati <br>A cura di <a href='https://it.linkedin.com/in/lnuzzo13?trk=profile-badge' title="Profilo LinkedIn di Luca Nuzzo"  target="_blank">Luca Nuzzo <i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="page-wrapper">
+        <header id="header">
+            <div id="header-logo">
+                <a href="./index.html">
+                    <img src="media/loghi/phases_logo_header.png" alt="Phases Band logo">
+                </a>
+            </div>
+            <nav id="header-nav">
+                <ul>
+                    <li><a class="header-link" href="index.html">Home</a></li>
+                    <li><a class="header-link" href="servizi.html#chisiamo-anchor-div">Chi Siamo</a></li>
+                    <li><a class="header-link" href="servizi.html" id="link-servizi">Servizi</a>
+                        <div class="dropdown-menu">
+                            <a class="header-sublink" href="servizi/weddings.html">Matrimoni</a>
+                            <a class="header-sublink" href="servizi/disco_inferno.html">Disco Inferno</a>
+                            <a class="header-sublink" href="servizi/private_party.html">Feste private</a>
+                            <a class="header-sublink" href="servizi/partners.html">DJ e Animatori</a>
+                        </div>
+                    </li>
+                    <li><a class="header-link" href="#">Galleria</a></li>
+                    <li><a class="header-link" href="contatti.html">Contatti</a></li>
+                    <li><a class="header-link" href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+            <button id="sidenav-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </header>
+    
+        <div id="carosello" style="display: none;">
+            <div id="carosello-img-wrapper">
+                <img src=""/>
+                <div class="btns-wrapper" id="left-btns-wrapper">
+                    <button class="btn-carosello" id="previous-btn"><i class="fa-solid fa-angle-left"></i></button>
+                </div>
+                <div class="btns-wrapper" id="right-btns-wrapper">
+                    <button class="btn-carosello" id="next-btn"><i class="fa-solid fa-angle-right"></i></button>
+                </div>            
+            </div>
+    
+            <div id="close-carosello">
+                <button id="btn-close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+    
+    
+        <div class="content-wrapper" id="wrapper-gallery">
+            <section id="gallery">
+                <div class="topleft-section">
+                    <h2>Galleria</h2>
+                    <p id="p-gallery">Immagina il tuo spettacolo attraverso alcune istantanee di momenti indimenticabili che hanno scandito il nostro percorso. Scendi in pista: costumi, suoni e colori della Disco Music ti riscalderanno il cuore!</p>
+                    <div id="short-left-divider" class="divider">
+                        <span></span>
+                        <span><h4>Phases</h4></span>
+                        <span></span>
+                    </div>
+                </div>
+                
+                <div class="gallery-img-wrapper"><img id="1" class="img-preview" src="media/photos/gallery/DSC_0940_1280.jpg"></div>
+                <div class="gallery-img-wrapper"><img id="2" class="img-preview" src="media/photos/gallery/IMG_20210928_131351_1280.jpg"></div>
+                <div class="gallery-img-wrapper"><img id="3" class="img-preview" src="media/photos/gallery/DSC_0826_1280.jpg"></div>
+                <div class="gallery-img-wrapper"><img id="4" class="img-preview" src="media/photos/gallery/DSC_0043_1280.jpg"></div>
+                <div class="gallery-img-wrapper"><img id="5" class="img-preview" src="media/photos/gallery/DSC_0164_1280.jpg"></div>
+                <div class="gallery-img-wrapper"><img id="6" class="img-preview" src="media/photos/gallery/DSC_0254_1280.jpg"></div>
+                <div class="gallery-img-wrapper"><img id="7" class="img-preview" src="media/photos/gallery/DSC_0613_1280.jpg"></div>
+                <div class="gallery-img-wrapper"><img id="8" class="img-preview" src="media/photos/gallery/DSC_0819_1280.jpg"></div>
+                <div class="gallery-img-wrapper"><img id="9" class="img-preview" src="media/photos/gallery/Varevire_756_1280.jpg"></div>
+                <div class="gallery-img-wrapper"><img id="10" class="img-preview" src="media/photos/gallery/Varevire_758_1280.jpg"></div>
+                <div class="gallery-img-wrapper"><img id="11" class="img-preview" src="media/photos/gallery/Varevire_765_1280.jpg"></div>
+                <div class="gallery-img-wrapper"><img id="12" class="img-preview" src="media/photos/gallery/Varevire_767_1280.jpg"></div>
+                <div class="gallery-img-wrapper"><img id="13" class="img-preview" src="media/photos/gallery/Varevire_838_1280.jpg"></div>
+                <div class="gallery-img-wrapper"><img id="14" class="img-preview" src="media/photos/gallery/Varevire_812_1280.jpg"></div>
+                <div class="gallery-img-wrapper"><img id="15" class="img-preview" src="media/photos/gallery/Varevire_858_1280.jpg"></div>
+                <div class="gallery-img-wrapper"><img id="16" class="img-preview" src="media/photos/gallery/DSC_0063_1280.jpg"></div>
+                <div class="gallery-img-wrapper"><img id="17" class="img-preview" src="media/photos/gallery/DSC_0802_1280.jpg"></div>
+                <div class="gallery-img-wrapper"><img id="18" class="img-preview" src="media/photos/gallery/IMG_MP_165_1280.jpg"></div>
+                <div class="gallery-img-wrapper"><img id="19" class="img-preview" src="media/photos/gallery/IMG_MP_192_1280.jpg"></div>
+                <div class="gallery-img-wrapper"><img id="20" class="img-preview" src="media/photos/gallery/IMG_SG_072_1280.jpg"></div>
+                <div class="gallery-img-wrapper"><img id="21" class="img-preview" src="media/photos/gallery/IMG_20220807_002040_1280.jpg"></div>
+                <div class="gallery-img-wrapper"><img id="22" class="img-preview" src="media/photos/gallery/DSC_0725_1280.jpg"></div>
+                <div class="gallery-img-wrapper"><img id="23" class="img-preview" src="media/photos/gallery/IMG_MP_222_1280.jpg"></div>
+            </section>
+    
+            <div class="spacer-100"></div>
+    
+            <div id="gallery-preview">
+                <div id="instagram-links-wrapper">
+                    <a href="https://www.instagram.com/PhasesLiveBand/" target="_blank" title="Instagram.com - Phases Live Band">
+                        <div id="instalogo-container">
+                            <span></span>
+                        </div>
+                        <h4>Phases</h4>
+                    </a>
+                </div>
+                <div id="photos-wrapper">
+                    <div class="photo-container"></div>
+                    <div class="photo-container"></div>
+                    <div class="photo-container"></div>
+                    <div class="photo-container"></div>
+                    <div class="photo-container"></div>
+                </div>
+            </div>
+    
+            <div id="full-logo-divider">
+                <img src="media/loghi/phases_logo_divider_short.png"/>
+            </div>
+            
+        </div>
+    
+        <div class="content-wrapper" id="wrapper-videos-section">
+            <div id="videos-section">
+                <div class="article">
+                    <p class="date">00/02/2023</p>
+                    <h2 class="video-mobile-title">L'aria si sta scaldando!</h2>
+                    <h3 class="video-mobile-title">Hot Stuff - Donna Summer</h3>
+                    <div class="video-img-wrapper">
+                        <a href="https://youtu.be/X6KAciD8sLI" title="YouTube.com - Hot Stuff - Phases Band - Donna Summer Cover" target="_blank">
+                            <img src="media/photos/gallery/HotStuff_Preview.jpg">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <div class="article-text-wrapper">
+                        <h2>L'aria si sta scaldando!</h2>
+                        <h3>Hot Stuff - Donna Summer</h3>
+                        <p>
+                            La musica è la nostra passione e vogliamo coronare ogni concerto live con un'esplosione contagiosa di energia: <i style="color: inherit; transition: none; font-size: inherit">Hot Stuff</i> è quel tipo di brano che solleva di forza il pubblico dalle sedie e lo spinge a muoversi al ritmo del cuore pulsante. È un'esperienza di pura potenza, un brano coinvolgente e sensuale che non può lasciare nessuno indifferente.
+                        </p>
+                        <p>
+                            Chi altri se non Donna Summer avrebbe potuto incanalare in un singolo brano passione, energia e quella forza magnetica che improvvisamente ci attrae a chi amiamo? La Queen of Disco ci ha regalato una perla intramontabile che ancora oggi riesce a far ballare le folle, e noi siamo onorati di poter interpretare questo brano e di condividerlo con il nostro pubblico!
+                        </p>
+                        <p>
+                            <i style="color: inherit; transition: none; font-size: inherit">Hot Stuff</i> è un'esplosione di energia e passione che ci spinge a dare il massimo sul palco. Sin dalla sua introduzione nel repertorio, abbiamo sempre sentito la necessità di preservarne un posto d'onore in scaletta. Siamo grati a Donna Summer per averci regalato un brano così potente: a noi non resta che alzare al massimo il volume per farvi scatenare e riportarvi indietro nel tempo.
+                        </p>
+                        <p>
+                            L'atmosfera si fa incandescente e l'energia raggiunge il suo culmine... È il momento di scatenarsi sulla pista da ballo! Hot Stuff di Donna Summer è quel brano che ci fa perdere ogni inibizione, ci travolge con la sua potenza e ci trasporta in un'epoca di pura euforia musicale. Non c'è modo migliore di concludere un concerto live se non con questa esplosione di passione contagiosa che coinvolge tutti quanti. Siete pronti a scendere in pista?
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="gallery-divider">
+                    <span></span>
+                </div>
+    
+                <div class="article">
+                    <p class="date">00/00/2021</p>
+                    <h2 class="video-mobile-title">La musica ai tempi della pandemia</h2>
+                    <h3 class="video-mobile-title">The Great Gig In The Sky - Pink Floyd</h3>
+                    <div class="video-img-wrapper">
+                        <a href="https://youtu.be/sk7o2smLXS0" title="YouTube.com - The Great Gig In The Sky - Phases & Friends (Pink Floyd Cover)" target="_blank">
+                            <img src="media/photos/gallery/GreatGigInTheSky_Preview.jpg">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <div class="article-text-wrapper">
+                        <h2>La musica ai tempi della pandemia</h2>
+                        <h3>The Great Gig In The Sky - Pink Floyd</h3>
+                        <p>
+                            Siamo fermamente convinti che la musica abbia il potere di unire le persone, sia gli artisti che gli ascoltatori. Nel corso degli anni, questa convinzione ci ha portato a sviluppare rapporti di <b>solidarietà e amicizia</b> con altri musicisti, offrendoci numerose occasioni per collaborare alla realizzazione di eventi e progetti musicali disparati.
+                        </p>
+                        <p>
+                            Durante il periodo di quarantena imposto dalla <b>pandemia di COVID-19</b> abbiamo sentito la necessità di richiamare alcuni amici stretti o di vecchia data per ricreare un brano che potesse catturare l'atmosfera di paura e smarrimento che all'epoca dominava il mondo e, al contempo, lanciare un potente appello di forza e speranza. Volevamo regalare una distrazione, qualcosa che potesse rendere meno difficile un momento storico che mai avremmo pensato di dover affrontare.
+                        </p>
+                        <p>
+                            <i style="color: inherit; transition: none; font-size: inherit">The Great Gig In The Sky</i> dei Pink Floyd è stata la scelta perfetta per il nostro intento. Questo brano è un viaggio vocale che affronta i più intimi timori dell'uomo: dolce e potente allo stesso tempo, è in grado di suscitare emozioni struggenti e vere, invitando l'ascoltatore a riflettere sulla propria vita, trasportandolo dall'altra parte dello specchio.
+                        </p>
+                        <p>
+                            Noi, i Phases, insieme a Luca, Nicola, Manuel e Vito, abbiamo contribuito con la nostra musica, mentre Rossana ha saputo interpretare in modo commovente e indimenticabile la parte vocale. Nonostante le limitazioni imposte dal lockdown, siamo riusciti a superare le barriere virtualmente e a riproporre un brano che rifletteva il nostro desiderio comune di unità e resilienza: in quel momento l'emozione della musica ci ha fatti sentire <b>vicini</b>, come non mai. Siamo orgogliosi di essere stati parte di questo progetto e continueremo a coltivare la nostra passione per la musica come veicolo di unione e ispirazione, anche nei momenti più difficili.
+                        </p>
+                        <p style="text-align: center; text-indent: 0; margin-top: 35px; font-family: NexaThin">
+                            <i style="color: inherit; transition: none; font-size: inherit">"Non ho paura di morire, in qualsiasi momento succederà, non mi importa. <br>Perché dovrei avere paura di morire? Non c'è motivo per averne, prima o poi si deve andare."</i>
+                        </p>
+                        <p style="text-align: center; text-indent: 0; font-family: NexaThin">&ndash; Richard Wright</p>
+                    </div>
+                </div>
+    
+                <div class="gallery-divider">
+                    <span></span>
+                </div>
+    
+                <div class="article">
+                    <p class="date">00/00/2020</p>
+                    <h2 class="video-mobile-title">Una band... sopra le righe!</h2>
+                    <h3 class="video-mobile-title">Maniac (Flashdance) - Michael Sembello</h3>
+                    <div class="video-img-wrapper">
+                        <a href="https://youtu.be/-65ASJkjlR8" title="YouTube.com - The Great Gig In The Sky - Phases & Friends (Pink Floyd Cover)" target="_blank">
+                            <img src="media/photos/gallery/Maniac_Preview.jpg">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <div class="article-text-wrapper">
+                        <h2>Una band... sopra le righe!</h2>
+                        <h3>Maniac (Flashdance) - Michael Sembello</h3>
+                        <p>
+                            Ecco un brano che rappresenta a pieno non solo il ritmo del nostro spettacolo, divertente e sfrenato, ma anche il nostro spirito, folle e un po' sopra le righe! Questa canzone ha il potere di farci scatenare: è un'esplosione di energia pura che travolge tutti noi e ci fa perdere ogni inibizione, facendoci saltare fuori dai confini del palco e spingendoci ad abbracciare la nostra eccentricità.
+                        </p>
+                        <p>
+                            <i style="color: inherit; transition: none; font-size: inherit">Flashdance</i> ha emozionato milioni di persone in tutto il mondo e ancora oggi molti ricordano l'iconico passo di danza di Alex &ndash; la ballerina protagonista del film &ndash; nel momento in cui risuona <i style="color: inherit; transition: none; font-size: inherit">Maniac</i>. Il brano è un <b>inno alla libertà</b> attraverso la danza, una sfida a ballare e ad esprimersi come non si è mai fatto prima, senza aver paura del giudizio altrui e delle convenzioni sociali. Ogni movimento e ogni passo di danza sono un'espressione di gioia e liberazione, un invito a ballare senza freni e a lasciarci trasportare dalla musica.
+                        </p>
+                        <p>
+                            <i style="color: inherit; transition: none; font-size: inherit">Maniac</i> è molto più di un semplice brano dance, è l'incarnazione della nostra energia e del nostro spirito folle e fuori dagli schemi, con cui vogliamo farvi vivere un'esperienza di puro di divertimento e liberazione, lasciando che la musica vi restituisca il controllo del vostro corpo e di voi stessi. Non importa se non siamo ballerini professionisti o se non abbiamo mai preso una lezione di danza nella nostra vita: Sembello ci invita ad abbandonare ogni preoccupazione e a ballare come se nessuno ci stesse guardando. <i style="color: inherit; transition: none; font-size: inherit">Maniac</i> è un inno alla libertà e alla celebrazione di noi stessi, un incoraggiamento a metterci in gioco e a lasciarci trasportare dalla magia della musica.
+                        </p>
+                    </div>
+                </div>         
+            </div>
+            <div class="spacer-100"></div>       
+        </div>
+    
+        <a href="https://wa.me/+393335317979" target="_blank" id="whatsapp-floating-btn" title="Contattaci su WhatsApp">
+            <span id="whatsapp-floating-icon"></span>
+        </a>
+        
+        <footer>
+            <div id="footer-logo">
+                <img src="media/loghi/phases_logo_white_footer.png" alt="Phases Band logo bianco">
+            </div>
+    
+            <div id="footer-social-media-links" class="small-social-media-links">
+                <a href="https://www.facebook.com/PhasesLiveBand" target="_blank" title="Facebook.com - Phases Live Band" class="flex-col-center">
+                    <img id="logo-facebook-footer" src="media/loghi/terze_parti/f_logo_RGB-White_58.png" alt="Facebook.com"/>
+                </a>
+                <a href="https://www.matrimonio.com/musica-matrimonio/phases-live-band--e234901" target="_blank" title="Matrimonio.com - Phases Live Band" class="flex-col-center">
+                    <span id="logo-matrimoniocom-footer"></span>
+                </a>
+                <a href="https://www.instagram.com/PhasesLiveBand/" target="_blank" title="Instagram.com - Phases Live Band" class="flex-col-center">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.musiqua.it/band/phases-band-8309" target="_blank" title="Musiqua.it - Phases Band" class="flex-col-center">
+                    <img id="logo-musiquait-footer" src="media/loghi/terze_parti/logo_musiqua_lente_bianca.png" alt="Musiqua.it"/>
+                </a>
+                <a href="https://www.youtube.com/channel/UCzKWjXqjQz3L-RrKxNKYWNQ" title="YouTube.com - Phases Band" target="_blank" class="flex-col-center">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+    
+            <div class="copyright-wrapper">
+                &copy; 2023 Phases Band &#124; Tutti i diritti riservati<br>A cura di <a href='https://it.linkedin.com/in/lnuzzo13?trk=profile-badge' title="Profilo LinkedIn di Luca Nuzzo"  target="_blank">Luca Nuzzo <i class="fab fa-linkedin"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="js/page-loading.js"></script>
+    <script type="text/javascript" src="js/ajax-instagram-content.js"></script>
+    <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript" src="js/gallery-resize.js"></script>
+    <script type="text/javascript" src="js/carousel.js"></script>
+    <script type="text/javascript" src="js/sidenav.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,22 @@
+@media only screen and (max-width: 768px) {
+    #upper-form-group {
+        height: 200px;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #form textarea { margin-top: 40px }
+}
+
+@media only screen and (max-width: 1024px) {
+    #form textarea { height: 300px }
+    #send-mail-btn-container { margin-top: 40px }
+}
+
+
+@media only screen and (max-width: 1366px) {
+    @media only screen and (min-width: 1024px) {
+        #upper-form-group { column-gap: 30px }
+        #form input { padding: 1rem 1.5rem }
+    }
+}
