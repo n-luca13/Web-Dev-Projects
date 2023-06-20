@@ -32,15 +32,15 @@
 <body>
     <div id="sidenav">
         <div id="sidenav-btn-close-wrapper">
-            <button id="sidenav-btn-close"><i class="fa-solid fa-xmark"></i></button>
+            <button id="sidenav-btn-close" aria-label="close sidenav"><i class="fa-solid fa-xmark"></i></button>
         </div>
     
         <div id="sidenav-wrapper">
             <div class="sidenav-link-container"><a class="sidenav-link" href="index.html">Home</a></div>
             <div class="sidenav-link-container"><a class="sidenav-link" href="servizi.html#chisiamo-anchor-div">Chi Siamo</a></div>
             <div class="sidenav-link-container">
-                <button id="btn-open-dropdown-servizi" class="sidenav-dropdown-btn"><i class="fa fa-caret-down"></i></button>
-                <a class="sidenav-link" href="#" id="link-servizi">Servizi</a>
+                <button id="btn-open-dropdown-servizi" class="sidenav-dropdown-btn" aria-label="open/close sub-menu"><i class="fa fa-caret-down"></i></button>
+                <a class="sidenav-link" href="servizi.html">Servizi</a>
             </div>
             <div id="sidenav-dropdown-servizi">
                 <ul>
@@ -116,16 +116,16 @@
                     <li><a class="header-link" href="faq.html">FAQ</a></li>
                 </ul>
             </nav>
-            <button id="sidenav-btn">
+            <button id="sidenav-btn" aria-label="open sidenav">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </header>
     
         <div id="full-screen-container">
             <div id="background-container">
-                <img class="img-background" id="gotodiscoinferno-background" src="media/photos/DiscoInferno_preview.jpg">
-                <img class="img-background" id="gotoweddings-background" src="media/photos/Weddings_preview.jpg" style="display: none;">
-                <img class="img-background" id="gotoprivateparty-background" src="media/photos/PrivateParty_Preview.jpg" style="display: none;">
+                <img class="img-background" id="gotodiscoinferno-background" src="media/photos/DiscoInferno_preview.jpg" alt="">
+                <img class="img-background" id="gotoweddings-background" src="media/photos/Weddings_preview.jpg" alt="" style="display: none;">
+                <img class="img-background" id="gotoprivateparty-background" src="media/photos/PrivateParty_Preview.jpg" alt="" style="display: none;">
             </div>
             <div id="main-titles-wrapper">
                 <div id="progress-bar-wrapper">
@@ -159,10 +159,10 @@
                     </a>
                 </section>
                 <div class="btns-wrapper" id="left-btns-wrapper">
-                    <button class="btn-change-bckgrnd" id="previous-service"><i class="fa-solid fa-angle-left"></i></button>
+                    <button class="btn-change-bckgrnd" id="previous-service" aria-label="Vai al servizio successivo"><i class="fa-solid fa-angle-left"></i></button>
                 </div>
                 <div class="btns-wrapper" id="right-btns-wrapper">
-                    <button class="btn-change-bckgrnd" id="next-service"><i class="fa-solid fa-angle-right"></i></button>
+                    <button class="btn-change-bckgrnd" id="next-service" aria-label="Vai al servizio precedente"><i class="fa-solid fa-angle-right"></i></button>
                 </div>      
             </div>
         </div>
@@ -173,7 +173,7 @@
             <section id="chi-siamo">
                 <section id="presentation-container">
                     <div id="presentation-img-container">
-                        <img src="media/photos/Band_1280.jpg">
+                        <img src="media/photos/Band_1280.jpg" alt="Foto della band">
                     </div>
                     <article>
                         <header>
@@ -273,7 +273,7 @@
             <div class="spacer-100"></div>
     
             <div id="full-logo-divider">
-                <img src="media/loghi/phases_logo_divider_short.png"/>
+                <img src="media/loghi/phases_logo_divider_short.png" alt=""/>
             </div>
             <div id="calltoaction-container">
                 <div id="cta-left-wrapper">
