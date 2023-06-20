@@ -33,9 +33,9 @@ async function fetchInstagramMedia() {
         
             if (imageUrl && permalink) {
                 PHOTO_CONTAINER[count].innerHTML = `
-                    <a href="${permalink}" target="_blank" class="instagram-link">
+                    <a href="${permalink}" target="_blank" class="instagram-link" title="Vedi su Instagram">
                         ${isVideo ? '<i class="fa-solid fa-play"></i>' : ''}
-                        <img src="${imageUrl}">
+                        <img src="${imageUrl}" alt="">
                     </a>
                 `;
                 count++;
