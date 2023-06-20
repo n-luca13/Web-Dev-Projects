@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Description" content="Ricreiamo le sonorità che hanno fatto la storia della Disco Music in vivaci serate di musica dal vivo e in eleganti ricevimenti dedicati a occasioni speciali.">
 
+    <meta property="og:image" content="https://www.phasesband.it/media/photos/Band_1280.jpg" />
+    <meta property="og:description" content="Ricreiamo le sonorità che hanno fatto la storia della Disco Music in vivaci serate di musica dal vivo e in eleganti ricevimenti dedicati a occasioni speciali" />
+    <meta property="og:url"content="https://www.phasesband.it/" />
+    <meta property="og:title" content="Phases Band - Weddings & More" />
+
     <title>Phases Band &ndash; Weddings & More</title>
 
     <script src="https://kit.fontawesome.com/c40b68c93c.js" crossorigin="anonymous"></script>
@@ -35,15 +40,15 @@
 
     <div id="sidenav">
         <div id="sidenav-btn-close-wrapper">
-            <button id="sidenav-btn-close"><i class="fa-solid fa-xmark"></i></button>
+            <button id="sidenav-btn-close" aria-label="close sidenav"><i class="fa-solid fa-xmark"></i></button>
         </div>
     
         <div id="sidenav-wrapper">
-            <div class="sidenav-link-container"><a class="sidenav-link" href="#">Home</a></div>
+            <div class="sidenav-link-container"><a class="sidenav-link" href="index.html">Home</a></div>
             <div class="sidenav-link-container"><a class="sidenav-link" href="servizi.html#chisiamo-anchor-div">Chi Siamo</a></div>
             <div class="sidenav-link-container">
-                <button id="btn-open-dropdown-servizi" class="sidenav-dropdown-btn"><i class="fa fa-caret-down"></i></button>
-                <a class="sidenav-link" href="servizi.html" id="link-servizi">Servizi</a>
+                <button id="btn-open-dropdown-servizi" class="sidenav-dropdown-btn" aria-label="open/close sub-menu"><i class="fa fa-caret-down"></i></button>
+                <a class="sidenav-link" href="servizi.html">Servizi</a>
             </div>
             <div id="sidenav-dropdown-servizi">
                 <ul>
@@ -119,14 +124,14 @@
                     <li><a class="header-link" href="faq.html">FAQ</a></li>
                 </ul>
             </nav>
-            <button id="sidenav-btn">
+            <button id="sidenav-btn" aria-label="open sidenav">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </header>
     
         <div id="full-screen-container">
             <div id="gif-handler-wrapper">
-                <button id="gif-handler" value="pause"><i class="fa-solid fa-circle-pause"></i></button>
+                <button id="gif-handler" value="pause" aria-label="Metti in Pausa/Riprendi il video"><i class="fa-solid fa-circle-pause"></i></button>
             </div>
     
             <div id="btn-videopromo-container" class="centered-button-wrapper">
@@ -134,7 +139,7 @@
             </div>
     
             <div id="main-titles-wrapper">
-                <video autoplay muted loop id="maniac-videoclip-preview">
+                <video autoplay muted loop id="maniac-videoclip-preview" poster="media/photos/maniac_copertina.jpg">
                     <source src="media/video/Hot Stuff h264 30fps no audio.mp4" type="video/mp4">
                     Il tuo browser non supporta video HTML5.
                 </video>
@@ -173,7 +178,7 @@
             <div class="spacer-100"></div>
     
             <div id="full-logo-divider">
-                <img src="media/loghi/phases_logo_divider_short.png">
+                <img src="media/loghi/phases_logo_divider_short.png" alt="">
             </div>
             <div id="calltoaction-container">
                 <div id="cta-left-wrapper">
