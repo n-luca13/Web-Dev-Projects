@@ -148,16 +148,24 @@
 
 
 /* SIDENAV-BOTTOM */
-@media only screen and (max-height: 725px) {
+@media only screen and (max-height: 750px) {
+    #sidenav-bottom-wrapper { bottom: 68px }
     #sidenav-bottom-wrapper > .copyright-wrapper { display: none }
 
-    #sidenav-social-media-links { margin-bottom: 0 }
+    #sidenav-social-media-links {
+        margin-bottom: 0;
+        margin-top: 14px;
+    }
+}
+
+@media only screen and (max-height: 700px) { 
+    #sidenav-bottom-wrapper { bottom: 35px }
 }
 
 @media only screen and (max-height: 650px) {
     #sidenav-logo { display: none }
 
-    #sidenav-social-media-links { margin-top: 0 }
+    #sidenav-social-media-links {margin-top: 0 }
 }
 
 @media only screen and (max-height: 580px) {
