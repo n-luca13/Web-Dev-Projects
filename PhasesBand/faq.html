@@ -31,15 +31,15 @@
 <body>
     <div id="sidenav">
         <div id="sidenav-btn-close-wrapper">
-            <button id="sidenav-btn-close"><i class="fa-solid fa-xmark"></i></button>
+            <button id="sidenav-btn-close" aria-label="close sidenav"><i class="fa-solid fa-xmark"></i></button>
         </div>
     
         <div id="sidenav-wrapper">
             <div class="sidenav-link-container"><a class="sidenav-link" href="index.html">Home</a></div>
             <div class="sidenav-link-container"><a class="sidenav-link" href="servizi.html#chisiamo-anchor-div">Chi Siamo</a></div>
             <div class="sidenav-link-container">
-                <button id="btn-open-dropdown-servizi" class="sidenav-dropdown-btn"><i class="fa fa-caret-down"></i></button>
-                <a class="sidenav-link" href="servizi.html" id="link-servizi">Servizi</a>
+                <button id="btn-open-dropdown-servizi" class="sidenav-dropdown-btn" aria-label="open/close sub-menu"><i class="fa fa-caret-down"></i></button>
+                <a class="sidenav-link" href="servizi.html">Servizi</a>
             </div>
             <div id="sidenav-dropdown-servizi">
                 <ul>
@@ -59,7 +59,7 @@
             </div>
             <div class="sidenav-link-container"><a class="sidenav-link" href="galleria.html">Galleria</a></div>
             <div class="sidenav-link-container"><a class="sidenav-link" href="contatti.html">Contatti</a></div>
-            <div class="sidenav-link-container"><a class="sidenav-link" href="#">FAQ</a></div>
+            <div class="sidenav-link-container"><a class="sidenav-link" href="faq.html">FAQ</a></div>
         </div>
 
         <div id="sidenav-bottom-wrapper">
@@ -115,7 +115,7 @@
                 <li><a class="header-link" href="#">FAQ</a></li>
             </ul>
         </nav>
-        <button id="sidenav-btn">
+        <button id="sidenav-btn" aria-label="open sidenav">
           <i class="fa-solid fa-bars"></i>
         </button>
       </header>
@@ -142,7 +142,7 @@
                         <p class="detail-info">Via Sannicandro, 60<br>70020, Cassano delle Murge, BA</p>
                     </div>
                     <div id="googlemaps-wrapper" class="row-info">
-                        <iframe id="contact-map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+                        <iframe id="contact-map" title="google maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3015.9141716938184!2d16.770422211903504!3d40.89569757124717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134791ffb08315f3%3A0x3715eb162fde7c5c!2sMUB%20Recording%20Studio!5e0!3m2!1sit!2sit!4v1683884892041!5m2!1sit!2sit" 
                             allowfullscreen tabindex="0"></iframe>
                     </div>
